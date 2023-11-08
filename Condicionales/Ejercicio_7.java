@@ -14,7 +14,7 @@ public class Ejercicio_7 {
         numero_1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primero número"));
         numero_2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo número"));
         numero_3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el tercer número"));
-
+//variable temporal que guarda valores
         if (numero_1 > numero_2) {
             int temp = numero_1;
             numero_1 = numero_2;
