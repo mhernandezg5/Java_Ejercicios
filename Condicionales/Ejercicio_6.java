@@ -14,8 +14,10 @@ public class Ejercicio_6 {
 
         if (numero_1 % 2 == 0 && numero_2 % 2 == 0) {
             JOptionPane.showMessageDialog(null, "Ambos son pares");
-        } else {
+        } else if (numero_1 % 2 != 0 && numero_2 != 0) {
             JOptionPane.showMessageDialog(null, "No son pares");
+        } else {
+            JOptionPane.showMessageDialog(null, "Uno es par y otro impar");
         }
     }
 }
