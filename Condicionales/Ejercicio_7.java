@@ -14,22 +14,33 @@ public class Ejercicio_7 {
         numero_1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primero número"));
         numero_2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo número"));
         numero_3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el tercer número"));
-//variable temporal que guarda valores
-        if (numero_1 > numero_2) {
-            int temp = numero_1;
-            numero_1 = numero_2;
-            numero_2 = temp;
-        } else if (numero_2 > numero_3) {
-            int temp = numero_2;
-            numero_2 = numero_3;
-            numero_3 = temp;
-        } else if (numero_1 > numero_2) {
-            int temp = numero_1;
-            numero_1 = numero_2;
-            numero_2 = temp;
+
+        if (numero_1 > numero_2 && numero_2 > numero_3) {
+            JOptionPane.showMessageDialog(null, numero_1 + " - " + numero_2 + " - " + numero_3);
+        } else if (numero_1 > numero_3 && numero_3 > numero_2) {
+            JOptionPane.showMessageDialog(null, numero_1 + " - " + numero_3 + " - " + numero_2);
+        } else if (numero_2 > numero_1 && numero_1 > numero_3) {
+            JOptionPane.showMessageDialog(null, numero_2 + " - " + numero_1 + " - " + numero_3);
         }
-        JOptionPane.showMessageDialog(null,
-                "Los números ordenados de mayor a menor son: " + numero_3 + ", " + numero_2 + ", " + numero_1);
+        /*
+         * variable temporal que guarda valores
+         * if (numero_1 > numero_2) {
+         * int temp = numero_1;
+         * numero_1 = numero_2;
+         * numero_2 = temp;
+         * } else if (numero_2 > numero_3) {
+         * int temp = numero_2;
+         * numero_2 = numero_3;
+         * numero_3 = temp;
+         * } else if (numero_1 > numero_2) {
+         * int temp = numero_1;
+         * numero_1 = numero_2;
+         * numero_2 = temp;
+         * }
+         * JOptionPane.showMessageDialog(null,
+         * "Los números ordenados de mayor a menor son: " + numero_3 + ", " + numero_2 +
+         * ", " + numero_1);
+         */
     }
 
 }
