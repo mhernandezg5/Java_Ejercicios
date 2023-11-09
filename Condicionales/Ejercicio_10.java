@@ -4,18 +4,18 @@
  * meses de 28, 30 y 31 días
  * sin años bisiestos
  * 
- * 1 Enero = 31 YA
+ * 1 Enero = 31  
  * 2 Febrero = 28
- * 3 Marzo = 31 YA
- * 4 Abril = 30 YA
- * 5 Mayo = 31 YA
- * 6 Junio = 30 YA
- * 7 Julio = 31 YA
- * 8 Agosto = 31 YA
+ * 3 Marzo = 31 
+ * 4 Abril = 30 
+ * 5 Mayo = 31 
+ * 6 Junio = 30 
+ * 7 Julio = 31 
+ * 8 Agosto = 31 
  * 9 Septiembre = 30
- * 10 Octubre = 31 YA
- * 11 Noviembre =30 YA
- * 12 Diciembre = 31 YA
+ * 10 Octubre = 31 
+ * 11 Noviembre =30
+ * 12 Diciembre = 31
  */
 import javax.swing.JOptionPane;
 
