@@ -31,8 +31,9 @@ public class Ejercicio_7 {
         } else if (numero_3 > numero_1 && numero_1 > numero_2) {
             JOptionPane.showMessageDialog(null, numero_3 + " - " + numero_1 + " - " + numero_2);
         }
-        /* SOLUCION DE GPT
-         * variable temporal que guarda valores
+        /*
+         * SOLUCION DE GPT
+         * variable temporal que guarda valores se parece a un recorrido
          * if (numero_1 > numero_2) {
          * int temp = numero_1;
          * numero_1 = numero_2;
