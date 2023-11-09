@@ -31,6 +31,7 @@ public class Ejercicio_11 {
                 resultado = numero_1 - numero_2;
                 JOptionPane.showMessageDialog(null, "La resta es " + resultado);
                 break;
+
             case 'M':
             case 'm':
                 resultado = numero_1 * numero_2;
