@@ -25,6 +25,5 @@ public class Ejercicio_12 {
         } else {
             JOptionPane.showMessageDialog(null, "Beeeep nota incorrecta");
         }
-
     }
 }
