@@ -17,10 +17,19 @@ public class Ejercicio_7 {
 
         if (numero_1 > numero_2 && numero_2 > numero_3) {
             JOptionPane.showMessageDialog(null, numero_1 + " - " + numero_2 + " - " + numero_3);
+
         } else if (numero_1 > numero_3 && numero_3 > numero_2) {
             JOptionPane.showMessageDialog(null, numero_1 + " - " + numero_3 + " - " + numero_2);
+
         } else if (numero_2 > numero_1 && numero_1 > numero_3) {
             JOptionPane.showMessageDialog(null, numero_2 + " - " + numero_1 + " - " + numero_3);
+        } else if (numero_2 > numero_3 && numero_3 > numero_1) {
+            JOptionPane.showMessageDialog(null, numero_2 + "- " + numero_3 + " - " + numero_1);
+
+        } else if (numero_3 > numero_2 && numero_2 > numero_1) {
+            JOptionPane.showMessageDialog(null, numero_3 + " - " + numero_2 + " - " + numero_1);
+        } else if (numero_3 > numero_1 && numero_1 > numero_2) {
+            JOptionPane.showMessageDialog(null, numero_3 + " - " + numero_1 + " - " + numero_2);
         }
         /*
          * variable temporal que guarda valores
