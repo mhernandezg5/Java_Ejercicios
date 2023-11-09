@@ -14,19 +14,12 @@ public class Ejercicio_8 {
         // de una cifra
         if (numero >= 0 && numero <= 9) {
             JOptionPane.showMessageDialog(null, "Número de una cifra  " + numero);
-            
-            // de dos cifras
         } else if (numero >= 10 && numero <= 99) {
             JOptionPane.showMessageDialog(null, "Númer de dos cifras  " + numero);
-            
-            // de tres cifras
         } else if (numero >= 100 && numero <= 999) {
             JOptionPane.showMessageDialog(null, "Número de tres cifras  " + numero);
-
-            //Si ingresan un nuero fiera del rango
         } else {
             JOptionPane.showMessageDialog(null, "ERROR NÚMERO INVÁLIDO");
         }
-
     }
 }
