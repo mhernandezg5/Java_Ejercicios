@@ -41,5 +41,4 @@ public class Ejercicio_10 {
             JOptionPane.showMessageDialog(null, "Fecha incorrecta  " + +mes + " - " + dia + " - " + anio);
         }
     }
-
 }
