@@ -14,6 +14,5 @@ public class Ejercicio_1 {
             JOptionPane.showMessageDialog(null, "La potencia de " + numero + " es " + resultado);
             numero = Integer.parseInt(JOptionPane.showInputDialog("Escribre otro número"));
         }
-
     }
 }
