@@ -14,7 +14,7 @@ public class Ejercicio_2 {
         while (numero != 0) {
             if (numero > 0) {
                 JOptionPane.showMessageDialog(null, "El número " + numero + " es positivo");
-            } else {
+            } else if (numero < 0) {
                 JOptionPane.showMessageDialog(null, "El número " + numero + " es negativo");
             }
             numero = Integer.parseInt(JOptionPane.showInputDialog("Escribe el número"));
