@@ -6,17 +6,13 @@
  */
 package Ciclos;
 
-import java.util.Random;
-
+import java.lang.Math;
 import javax.swing.JOptionPane;
 
 public class Ejercicio_5 {
     public static void main(String[] args) {
-        // Crear un objeto de la clase Random
-        Random numero = new Random();
 
-        int minimo = 0, maximo = 100;
-        int numero_aleatorio = numero.nextInt(maximo - minimo + 1) + minimo;
+        int numero_aleatorio = (int) (Math.random() * 100);
         System.out.println(numero_aleatorio);
 
         int leer_numero;
