@@ -14,7 +14,7 @@ public class Ejercicio_12 {
       JOptionPane.showInputDialog("Ingrese un número")
     );
     for (int contador = 1; contador <= numero; contador++) {
-      System.out.println(contador);
+      //System.out.println(contador);
       factorial *= contador;
     }
     JOptionPane.showMessageDialog(
