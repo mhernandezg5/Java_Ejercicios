@@ -8,15 +8,20 @@ import javax.swing.JOptionPane;
 
 public class Ejercicio_7 {
     public static void main(String[] args) {
-        int numero, contador = 0, suma = 0, media;
-        do {
+        int numero, suma = 0, media, contador = 0;
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Escriba un número"));
 
+        while (numero >= 0) {
             contador++;
-            numero = Integer.parseInt(JOptionPane.showInputDialog("Escriba un número"));
             suma += numero;
-            System.out.println(suma + " ------------ " + contador);
-
-        } while (numero >= 0);
-
+            numero = Integer.parseInt(JOptionPane.showInputDialog("Escriba un número"));
+        }
+        if (contador == 0) {
+            JOptionPane.showMessageDialog(null, "Errror div 0");
+        } else {
+            media = suma / contador;
+            JOptionPane.showMessageDialog(null, "La suma es " + suma);
+            JOptionPane.showMessageDialog(null, "La media es " + media);
+        }
     }
 }
