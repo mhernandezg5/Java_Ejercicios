@@ -10,5 +10,6 @@ public class Ejercicio_9 {
     for (int contador = 100; contador >= 0; contador -= 7) {
       System.out.print(contador + " ");
     }
+    //100 93 86 79 72 65 58 51 44 37 30 23 16 9 2
   }
 }
