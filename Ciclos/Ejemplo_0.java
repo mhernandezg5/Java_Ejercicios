@@ -11,6 +11,7 @@ public class Ejemplo_0 {
         
         for (int contador = 0; contador<10; contador++) {
         System.out.println(contador);
+        System.out.println("ejemplo");
     }
 
     }
