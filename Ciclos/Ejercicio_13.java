@@ -31,8 +31,8 @@ public class Ejercicio_13 {
     }
     //System.out.println(suma_enteros);
     // System.out.println(contador);
-    media_positivos = suma_positivos / (contador - 1);
-    media_negativos = suma_negativos / (contador - 1);
+    media_positivos = suma_positivos / (contador_positivos - 1);
+    media_negativos = suma_negativos / (contador_negativos - 1);
 
     //Mostrar la media de los enteros
     JOptionPane.showMessageDialog(
