@@ -5,5 +5,15 @@ package Arreglos;
 
 public class Ejemplos_0 {
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+    int[] numeros = new int[3];
+
+    numeros[0] = 1991;
+    numeros[1] = 1999;
+    numeros[2] = 2017;
+
+    System.out.println(numeros[2]);
+    System.out.println(numeros[1]);
+    System.out.println(numeros[0]);
+  }
 }
