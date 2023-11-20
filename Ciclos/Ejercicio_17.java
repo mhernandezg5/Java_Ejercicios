@@ -15,16 +15,20 @@ public class Ejercicio_17 {
 
   public static void main(String[] args) {
     //Variables globales
-    int contador, factura_mayor = 0;
+    int contador, factura_mayor = 0, codigo_articulo = 0;
     double litros = 0, suma_litros = 0, precio_litros = 0, suma_precios =
       0, sub_total, total = 0, articulo1 = 0;
-    String codigo_articulo;
 
     for (contador = 1; contador <= 2; contador++) {
       // leer datos del teclado
-      codigo_articulo = JOptionPane.showInputDialog(contador + ". Código ");
+      codigo_articulo =
+        Integer.parseInt(JOptionPane.showInputDialog(contador + ". Código "));
       litros =
-        Double.parseDouble(JOptionPane.showInputDialog(contador + ". Litros"));
+        Double.parseDouble(
+          JOptionPane.showInputDialog(
+            contador + ". Litros \n" + "Artículo: " + codigo_articulo
+          )
+        );
       precio_litros =
         Double.parseDouble(
           JOptionPane.showInputDialog(contador + ". Precio por litro")
