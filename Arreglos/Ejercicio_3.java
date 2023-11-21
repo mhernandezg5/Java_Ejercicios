@@ -30,7 +30,7 @@ public class Ejercicio_3 {
         }
 
         for (int i : numeros) {
-            System.out.print(i);
+            System.out.print(" - " + i);
         }
         System.out.println("----------------------------");
         // System.out.println("SUMA POS: " + suma_positivos);
