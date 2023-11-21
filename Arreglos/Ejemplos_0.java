@@ -6,6 +6,7 @@ package Arreglos;
 public class Ejemplos_0 {
 
   public static void main(String[] args) {
+    // constrctor de un objeto
     int[] numeros = new int[3];
 
     numeros[0] = 1991;
