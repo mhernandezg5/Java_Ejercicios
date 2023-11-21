@@ -28,6 +28,5 @@ public class Ejercicio_5 {
             System.out.println(A[contador]);
             System.out.println(B[contador]);
         }
-
     }
 }
