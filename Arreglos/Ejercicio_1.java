@@ -12,8 +12,14 @@ public class Ejercicio_1 {
     for (int contador = 0; contador < numeros.length; contador++) {
       numeros[contador] = Integer.parseInt(JOptionPane.showInputDialog("Escribe un número enter:"));
     }
-    for (int iterador = 0; iterador < numeros.length; iterador++) {
-      System.out.println(iterador + 1 + ": " + numeros[iterador]);
+    for (int i : numeros) {
+      System.out.println(i);
+
     }
+    /*
+     * for (int iterador = 0; iterador < numeros.length; iterador++) {
+     * System.out.println(iterador + 1 + ": " + numeros[iterador]);
+     * }
+     */
   }
 }
