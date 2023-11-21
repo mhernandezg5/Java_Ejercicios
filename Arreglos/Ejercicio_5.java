@@ -24,6 +24,8 @@ public class Ejercicio_5 {
         for (int contador = 0; contador < B.length; contador++) {
             B[contador] = Integer.parseInt(JOptionPane.showInputDialog(contador + 1 + ". Número: "));
         }
+
+        // Imprimir arreglos mezclados
         for (int contador = 0; contador <= 20; contador++) {
             System.out.println(A[contador]);
             System.out.println(B[contador]);
