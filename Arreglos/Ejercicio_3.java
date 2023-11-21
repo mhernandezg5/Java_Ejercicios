@@ -36,12 +36,12 @@ public class Ejercicio_3 {
         // System.out.println("SUMA POS: " + suma_positivos);
         // System.out.println("Positivos: " + contador_positivos);
         media_positivos = suma_positivos / contador_positivos;
-        System.out.println("MEDIA POS: " + media_positivos);
+        System.out.println("MEDIA POSITIVOS: " + media_positivos);
         // System.out.println("SUMA NEG: " + suma_negativos);
         // System.out.println("Negativos: " + contador_negativos);
         media_negativos = suma_negativos / contador_negativos;
-        System.out.println("MEDIA NEG: " + media_negativos);
-        System.out.println("CEROS:  " + ceros);
+        System.out.println("MEDIA NEGATIVOS: " + media_negativos);
+        System.out.println("CANTIDAD DE CEROS:  " + ceros);
 
     }
 }
