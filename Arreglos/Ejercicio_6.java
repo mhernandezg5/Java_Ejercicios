@@ -13,16 +13,43 @@ import javax.swing.JOptionPane;
 
 public class Ejercicio_6 {
     public static void main(String[] args) {
-        int[] A = new int[5];
-        int[] B = new int[5];
+        int[] A = new int[12];
+        int[] B = new int[12];
         // Pedir y llenar el primer arreglo A
-        for (int contador = 0; contador < A.length; contador++) {
-            A[contador] = Integer.parseInt(JOptionPane.showInputDialog((contador + 1) + ". Número: "));
+        for (int contador_A = 0; contador_A < A.length; contador_A++) {
+            A[contador_A] = Integer
+                    .parseInt(JOptionPane.showInputDialog("Arreglo A: " + (contador_A + 1) + ":"));
         }
 
         // Pedir y llenar el segundo arreglo B
-        for (int contador_1 = 0; contador_1 < B.length; contador_1++) {
-            B[contador_1] = Integer.parseInt(JOptionPane.showInputDialog((contador_1 + 1) + ". Número: "));
+        for (int contador_B = 0; contador_B < B.length; contador_B++) {
+            B[contador_B] = Integer
+                    .parseInt(JOptionPane.showInputDialog("Arreglo B: " + (contador_B + 1) + ":"));
+        }
+
+        int[] C = new int[24]; // Arreglo C para mezclar A y B
+        int contador_C = 0; // Índice para el arreglo C
+
+        // Combinar los elementos de A y B en el arreglo C
+        for (int i = 0; i < 12; i += 3) {
+
+            // Agregar 3 elementos de A a C
+            for (int j = 0; j < 3; j++) {
+                C[contador_C] = A[i + j];
+                contador_C++;
+            }
+
+            // Agregar 3 elementos de B a C
+            for (int j = 0; j < 3; j++) {
+                C[contador_C] = B[i + j];
+                contador_C++;
+            }
+        }
+
+        // Mostrar el arreglo resultante C
+        System.out.println("Arreglo resultante C:");
+        for (int elemento : C) {
+            System.out.print(elemento + " ");
         }
     }
 }
