@@ -17,12 +17,12 @@ public class Ejercicio_6 {
         int[] B = new int[5];
         // Pedir y llenar el primer arreglo A
         for (int contador = 0; contador < A.length; contador++) {
-            A[contador] = Integer.parseInt(JOptionPane.showInputDialog(contador + 1 + ". Número: "));
+            A[contador] = Integer.parseInt(JOptionPane.showInputDialog((contador + 1) + ". Número: "));
         }
 
         // Pedir y llenar el segundo arreglo B
         for (int contador_1 = 0; contador_1 < B.length; contador_1++) {
-            B[contador_1] = Integer.parseInt(JOptionPane.showInputDialog(contador_1 + 1 + ". Número: "));
+            B[contador_1] = Integer.parseInt(JOptionPane.showInputDialog((contador_1 + 1) + ". Número: "));
         }
     }
 }
