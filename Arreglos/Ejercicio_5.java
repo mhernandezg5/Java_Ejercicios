@@ -18,17 +18,13 @@ public class Ejercicio_5 {
 
     // TABLA A
     for (int contador = 0; contador < A.length; contador++) {
-      A[contador] =
-        Integer.parseInt(
-          JOptionPane.showInputDialog(contador + 1 + ". Número: ")
-        );
+      A[contador] = Integer.parseInt(
+          JOptionPane.showInputDialog(contador + 1 + ". Número: "));
     }
     // TABLA B
     for (int contador = 0; contador < B.length; contador++) {
-      B[contador] =
-        Integer.parseInt(
-          JOptionPane.showInputDialog(contador + 1 + ". Número: ")
-        );
+      B[contador] = Integer.parseInt(
+          JOptionPane.showInputDialog(contador + 1 + ". Número: "));
     }
 
     // Imprimir arreglos mezclados
