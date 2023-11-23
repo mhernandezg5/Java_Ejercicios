@@ -11,31 +11,32 @@ import java.util.Scanner;
 
 public class Ejercicio_9 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        int[] numeros = new int[10];
+        try (Scanner entrada = new Scanner(System.in)) {
+            int[] numeros = new int[10];
 
-        // Leer 10 números por teclado
-        System.out.println("Ingrese 10 números enteros:");
-        for (int i = 0; i < numeros.length; i++) {
-            System.out.print((i + 1) + ". Número: ");
-            numeros[i] = entrada.nextInt();
-        }
+            // Leer 10 números por teclado
+            System.out.println("Ingrese 10 números enteros:");
+            for (int i = 0; i < numeros.length; i++) {
+                System.out.print((i + 1) + ". Número: ");
+                numeros[i] = entrada.nextInt();
+            }
 
-        // Guardar el último número
-        int ultimo = numeros[numeros.length - 1];
+            // Guardar el último número
+            int ultimo = numeros[numeros.length - 1];
 
-        // Desplazar los números una posición hacia abajo
-        for (int i = numeros.length - 1; i > 0; i--) {
-            numeros[i] = numeros[i - 1];
-        }
+            // Desplazar los números una posición hacia abajo
+            for (int i = numeros.length - 1; i > 0; i--) {
+                numeros[i] = numeros[i - 1];
+            }
 
-        // Asignar el último número al primer índice
-        numeros[0] = ultimo;
+            // Asignar el último número al primer índice
+            numeros[0] = ultimo;
 
-        // Mostrar la tabla desplazada hacia abajo
-        System.out.println("Tabla desplazada hacia abajo:");
-        for (int num : numeros) {
-            System.out.print(num + " ");
+            // Mostrar la tabla desplazada hacia abajo
+            System.out.println("Tabla desplazada hacia abajo:");
+            for (int num : numeros) {
+                System.out.print(num + " ");
+            }
         }
         System.out.println();
     }
