@@ -7,7 +7,7 @@ package Arreglos;
 
 import java.util.Scanner;
 
-public class Ejercicios_10 {
+public class Ejercicio_10 {
     public static void main(String[] args) {
         int[] numeros = new int[10];
 
