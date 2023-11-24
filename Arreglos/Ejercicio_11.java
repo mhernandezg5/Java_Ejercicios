@@ -21,20 +21,20 @@ public class Ejercicio_11 {
             }
 
             System.out.println("Introduce un número para insertar:");
-            int numeroAInsertar = entrada.nextInt();
+            int insertar = entrada.nextInt();
 
             // Insertar el nuevo número y ordenar el arreglo
-            int indiceInsercion = 5; // El índice donde se insertará el nuevo número
+            int indice_insertar = 5; // El índice donde se insertará el nuevo número
             for (int i = 4; i >= 0; i--) {
-                if (numeros[i] > numeroAInsertar) {
+                if (numeros[i] > insertar) {
                     numeros[i + 1] = numeros[i];
-                    indiceInsercion = i;
+                    indice_insertar = i;
                 } else {
                     System.out.println("Error en la secuencia");
                     
                 }
             }
-            numeros[indiceInsercion] = numeroAInsertar;
+            numeros[indice_insertar] = insertar;
 
             // Mostrar el arreglo con el número insertado y ordenado
             System.out.println("Arreglo con el número insertado y ordenado:");
