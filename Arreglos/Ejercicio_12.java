@@ -29,13 +29,11 @@ public class Ejercicio_12 {
                 for (int i = indice_eliminar; i < enteros.length - 1; i++) {
                     enteros[i] = enteros[i + 1];
                 }
-                enteros[enteros.length - 1] = 0; // Opcional: Último elemento se establece a 0
-                System.out.println("Elemento eliminado correctamente.");
 
                 // Mostrar el arreglo actualizado
                 System.out.println("Arreglo actualizado:");
-                for (int entero : enteros) {
-                    System.out.print(entero + " ");
+                for (int i = 0; i < enteros.length - 1; i++) {
+                    System.out.print(enteros[i] + " ");
                 }
             }
         }
