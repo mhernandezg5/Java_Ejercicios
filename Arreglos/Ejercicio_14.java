@@ -15,19 +15,19 @@ public class Ejercicio_14 {
 
         int[] C = new int[20];
 
-        Scanner leer = new Scanner(System.in);
-
-        // Llenar el arreglo
-        int contador_A = 0;
-        for (contador_A = 0; contador_A < A.length; contador_A++) {
-            System.out.print((contador_A + 1) + ". A - ARREGLO: ");
-            A[contador_A] = leer.nextInt();
-        }
-        // Llenar el arreglo
-        int contador_B = 0;
-        for (contador_B = 0; contador_B < B.length; contador_B++) {
-            System.out.print((contador_B + 1) + ". B - ARREGLO: ");
-            B[contador_B] = leer.nextInt();
+        try (Scanner leer = new Scanner(System.in)) {
+            // Llenar el arreglo
+            int contador_A = 0;
+            for (contador_A = 0; contador_A < A.length; contador_A++) {
+                System.out.print((contador_A + 1) + ". A - ARREGLO: ");
+                A[contador_A] = leer.nextInt();
+            }
+            // Llenar el arreglo
+            int contador_B = 0;
+            for (contador_B = 0; contador_B < B.length; contador_B++) {
+                System.out.print((contador_B + 1) + ". B - ARREGLO: ");
+                B[contador_B] = leer.nextInt();
+            }
         }
 
         // recorrido general del arreglo C
