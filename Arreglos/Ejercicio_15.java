@@ -23,7 +23,6 @@ public class Ejercicio_15 {
             for (int i = 0; i < numeros.length; i++) {
                 if (numeros[i] == numBuscar) {
                     posicion = i;
-                    break;
                 }
             }
 
