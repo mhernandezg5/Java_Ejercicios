@@ -12,11 +12,9 @@ public class Ejercicio_1 {
         // Definir matriz
         int matriz[][];
         int filas, columnas;
-
         // Pedir valores
         filas = Integer.parseInt(JOptionPane.showInputDialog("Filas"));
         columnas = Integer.parseInt(JOptionPane.showInputDialog("Columnas"));
-
         try (// pedir valores de filas y columnas
                 Scanner entrada = new Scanner(System.in)) {
             matriz = new int[filas][columnas];
@@ -27,7 +25,6 @@ public class Ejercicio_1 {
                 }
             }
         }
-
         // Mostrar la matriz
         System.out.println("\nMATRIZ");
         for (int i = 0; i < filas; i++) { // Recorre las filas
@@ -36,7 +33,6 @@ public class Ejercicio_1 {
             }
             System.out.println();
         }
-
         // Validar si es simetrica o no
         if (filas == columnas) {
             System.out.println("MATRIZ SIMÉTRICA");
