@@ -34,10 +34,6 @@ public class Ejercicio_1 {
             System.out.println();
         }
         // Validar si es simetrica o no
-        if (filas == columnas) {
-            System.out.println("MATRIZ SIMÉTRICA");
-        } else {
-            System.out.println("MATRIZ ASIMETRICA");
-        }
+
     }
 }
