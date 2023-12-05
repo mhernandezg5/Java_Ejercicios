@@ -12,6 +12,8 @@ public class Ejercicio_1 {
         // Definir matriz
         int matriz[][];
         int filas, columnas;
+        boolean simetrica = true; // comprueba si la matriz es simétrica o cambia en algún punto
+
         // Pedir valores
         filas = Integer.parseInt(JOptionPane.showInputDialog("Filas"));
         columnas = Integer.parseInt(JOptionPane.showInputDialog("Columnas"));
@@ -34,6 +36,30 @@ public class Ejercicio_1 {
             System.out.println();
         }
         // Validar si es simetrica o no
+        if (filas == columnas) { // Es cuadrada es decir de 2x2, 3x3 etc
+            int i = 0, j = 0;
+
+            while (i < filas && simetrica == true) {
+                while (j < i && simetrica == true) {
+                    if (matriz[i][j] != matriz[j][i]) {
+                        simetrica = false;
+                    }
+                    j++;
+
+                }
+                i++;
+
+            }
+            if (simetrica == true) {
+                System.out.println("La matriz es SIMETRICA");
+
+            } else {
+                System.out.println("La matriz NO ES SIMETRICA");
+            }
+
+        } else {
+            System.out.println("La matriz no es SIMETRICA");
+        }
 
     }
 }
