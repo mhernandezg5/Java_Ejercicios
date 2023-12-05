@@ -39,17 +39,18 @@ public class Ejercicio_1 {
         if (filas == columnas) { // Es cuadrada es decir de 2x2, 3x3 etc
             int i = 0, j = 0;
 
-            while (i < filas && simetrica == true) {
-                while (j < i && simetrica == true) {
+            for (i = 0; i < filas; i++) {
+                for (j = 0; j < columnas; j++) {
                     if (matriz[i][j] != matriz[j][i]) {
                         simetrica = false;
+                        break;
                     }
-                    j++;
-
                 }
-                i++;
-
+                if (!simetrica) {
+                    break;
+                }
             }
+
             if (simetrica == true) {
                 System.out.println("La matriz es SIMETRICA");
 
