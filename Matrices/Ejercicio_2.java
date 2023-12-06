@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package Matrices;
 
 import java.util.Scanner;
@@ -14,7 +17,7 @@ public class Ejercicio_2 {
             System.out.println("Ingrese los valores para la primera matriz:");
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
-                    System.out.print("Matriz1 [" + i + "][" + j + "]: ");
+                    System.out.print("Matriz A [" + i + "][" + j + "]: ");
                     A[i][j] = entrada.nextInt();
                 }
             }
@@ -23,7 +26,7 @@ public class Ejercicio_2 {
             System.out.println("Ingrese los valores para la segunda matriz:");
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
-                    System.out.print("Matriz2 [" + i + "][" + j + "]: ");
+                    System.out.print("Matriz B [" + i + "][" + j + "]: ");
                     B[i][j] = entrada.nextInt();
                 }
             }
