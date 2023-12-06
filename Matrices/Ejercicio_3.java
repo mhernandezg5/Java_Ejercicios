@@ -1,5 +1,5 @@
 /*
- * crear y cargar una matriz de tamaño 3x3 transponerla y mostrarla
+ * crear y cargar una matriz de tamaño 3x3 transponerla y mostrarlas
  */
 package Matrices;
 
