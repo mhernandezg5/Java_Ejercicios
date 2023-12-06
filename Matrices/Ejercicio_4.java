@@ -5,7 +5,7 @@
  */
 package Matrices;
 
-public class Ejerccio_4 {
+public class Ejercicio_4 {
     public static void main(String[] args) {
         int[][] matriz = new int[7][7];
 
