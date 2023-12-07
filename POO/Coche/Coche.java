@@ -1,4 +1,4 @@
-package POO;
+package POO.Coche;
 
 public class Coche {
     String color;
