@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        try (// PEdir los números
+        try (// Pedir los números
                 Scanner entrada = new Scanner(System.in)) {
             System.out.print("Número 1: ");
             int numero1 = entrada.nextInt();
@@ -25,6 +25,5 @@ public class Main {
             // para que el método tome los parámetros y muestre los valores
             opera.imprimir(suma, resta, multiplicacion, division);
         }
-
     }
 }
