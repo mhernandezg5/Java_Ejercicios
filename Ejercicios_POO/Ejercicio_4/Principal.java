@@ -21,34 +21,35 @@ public class Principal {
     }
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        String nombre;
-        int no_atleta, participantes, ganador;
-        float tiempo_Carrera;
+        try (Scanner entrada = new Scanner(System.in)) {
+            String nombre;
+            int no_atleta, participantes, ganador;
+            float tiempo_Carrera;
 
-        // Pedir la cantidad de atletas que van a participar
-        System.out.print("Ateltas a participar: ");
-        participantes = entrada.nextInt();
+            // Pedir la cantidad de atletas que van a participar
+            System.out.print("Ateltas a participar: ");
+            participantes = entrada.nextInt();
 
-        // Arreglo de objetos
-        Atleta atletas[] = new Atleta[participantes];
+            // Arreglo de objetos
+            Atleta atletas[] = new Atleta[participantes];
 
-        for (int iterador = 0; iterador < atletas.length; iterador++) {
+            for (int iterador = 0; iterador < atletas.length; iterador++) {
 
-            System.out.println("Atleta # " + (iterador + 1));
+                System.out.println("Atleta # " + (iterador + 1));
 
-            System.out.println("No. Atleta: ");
-            no_atleta = entrada.nextInt();
-            entrada.nextLine();
-            System.out.println("Nombre: ");
-            nombre = entrada.nextLine();
-            System.out.println("Tiempo: ");
-            tiempo_Carrera = entrada.nextFloat();
+                System.out.println("No. Atleta: ");
+                no_atleta = entrada.nextInt();
+                entrada.nextLine();
+                System.out.println("Nombre: ");
+                nombre = entrada.nextLine();
+                System.out.println("Tiempo: ");
+                tiempo_Carrera = entrada.nextFloat();
 
-            atletas[iterador] = new Atleta(no_atleta, nombre, tiempo_Carrera);
+                atletas[iterador] = new Atleta(no_atleta, nombre, tiempo_Carrera);
+            }
+            ganador = indiceGanador(atletas);
+            System.out.println("EL GANADOR ES: " + atletas[ganador].mostrarGanador());
         }
-        ganador = indiceGanador(atletas);
-        System.out.println("EL GANADOR ES: " + atletas[ganador].mostrarGanador());
 
     }
 
